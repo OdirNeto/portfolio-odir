@@ -1,7 +1,7 @@
 # Portfólio Online — Odir Pereira Borges Neto
 
 Portfólio pessoal desenvolvido como Atividade Prática da disciplina
-**Fundamentos da Programação Web** — UNINTER.
+**Desenvolvimento Web** — UNINTER.
 
 ## 🛠️ Tecnologias
 
