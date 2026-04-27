@@ -39,7 +39,7 @@ Basta abrir o arquivo `index.html` em qualquer navegador moderno.
 
 ## 🌐 Site publicado
 
-[https://odirborges.github.io/portfolio-odir/](https://odirborges.github.io/portfolio-odir/)
+[https://odirNeto.github.io/portfolio-odir/](https://odirNeto.github.io/portfolio-odir/)
 
 ---
 © 2026 Odir Pereira Borges Neto
