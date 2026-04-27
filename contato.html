@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+  Portfólio Online - Odir Pereira Borges Neto
+  Página: Contato - formulário com validação JavaScript
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com Odir Borges" />
+  <title>Odir Borges | Contato</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">Odir<span>.dev</span></a>
+      <button id="btnMenu" class="btn-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+        <button id="btnTema" class="btn-tema" aria-label="Alternar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao-cabecalho">
+      <div class="container">
+        <h1 class="titulo-pagina">Vamos conversar?</h1>
+        <p class="subtitulo">Estou disponível para oportunidades, projetos e parcerias.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="grid-contato">
+
+          <!-- Coluna esquerda: informações de contato -->
+          <div class="info-contato">
+            <h2>Informações de Contato</h2>
+            <ul class="lista-contato">
+              <li>
+                <span class="icone">📧</span>
+                <div>
+                  <strong>E-mail</strong>
+                  <a href="mailto:neto.odir@gmail.com">neto.odir@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="icone">📱</span>
+                <div>
+                  <strong>Telefone</strong>
+                  <a href="tel:+5583996052766">(83) 99605-2766</a>
+                </div>
+              </li>
+              <li>
+                <span class="icone">📍</span>
+                <div>
+                  <strong>Localização</strong>
+                  <span>João Pessoa - PB</span>
+                </div>
+              </li>
+              <li>
+                <span class="icone">💼</span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/in/odirborges</a>
+                </div>
+              </li>
+              <li>
+                <span class="icone">🐙</span>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/odirborges" target="_blank" rel="noopener">github.com/odirborges</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna direita: formulário de contato com validação JS -->
+          <div class="caixa-formulario">
+            <h2>Envie uma mensagem</h2>
+            <!-- novalidate desativa a validação nativa do navegador para usar a do JS -->
+            <form id="formContato" class="formulario" novalidate>
+              <div class="campo">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+                <small class="erro" id="erroNome"></small>
+              </div>
+
+              <div class="campo">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" />
+                <small class="erro" id="erroEmail"></small>
+              </div>
+
+              <div class="campo">
+                <label for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
+                <small class="erro" id="erroMensagem"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primario btn-bloco">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal exibido após envio bem-sucedido (controlado por JS) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-conteudo">
+      <span class="modal-icone">✅</span>
+      <h2>Mensagem enviada!</h2>
+      <p>Obrigado pelo contato. Responderei em breve.</p>
+      <button id="fecharModal" class="btn btn-primario">Fechar</button>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 Odir Pereira Borges Neto. Todos os direitos reservados.</p>
+      <p class="rodape-pequeno">Feito com HTML5, CSS3 e JavaScript puro.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

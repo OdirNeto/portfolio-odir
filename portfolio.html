@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+  Portfólio Online - Odir Pereira Borges Neto
+  Página: Portfólio - projetos desenvolvidos
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projetos desenvolvidos por Odir Borges" />
+  <title>Odir Borges | Portfólio</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">Odir<span>.dev</span></a>
+      <button id="btnMenu" class="btn-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html" class="ativo">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <button id="btnTema" class="btn-tema" aria-label="Alternar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao-cabecalho">
+      <div class="container">
+        <h1 class="titulo-pagina">Meus Projetos</h1>
+        <p class="subtitulo">Trabalhos que demonstram minha evolução como desenvolvedor.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <!-- Filtros dinâmicos controlados por JavaScript -->
+        <div class="filtros">
+          <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
+          <button class="btn-filtro" data-filtro="back">Back-End</button>
+          <button class="btn-filtro" data-filtro="front">Front-End</button>
+          <button class="btn-filtro" data-filtro="game">Jogos</button>
+        </div>
+
+        <!-- Grid de projetos. Cada cartão tem um data-categoria usado pelos filtros JS -->
+        <div class="grid-projetos" id="gridProjetos">
+
+          <article class="projeto" data-categoria="back">
+            <div class="projeto-imagem" style="background:linear-gradient(135deg,#0f766e,#134e4a);">
+              <span>🐍</span>
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Sistema Bancário em Python</h3>
+              <p>Simulação de sistema bancário orientado a objetos: cadastro de clientes,
+                contas, operações de depósito, saque, extrato e registro de logs em arquivo.</p>
+              <div class="tags"><span>Python</span><span>POO</span><span>CLI</span></div>
+              <a href="https://github.com/odirborges" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="projeto" data-categoria="back game">
+            <div class="projeto-imagem" style="background:linear-gradient(135deg,#dc2626,#7f1d1d);">
+              <span>🏎️</span>
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Mario Kart.JS</h3>
+              <p>Simulação de corrida inspirada na franquia Mario Kart, desenvolvida em
+                Node.js, com lógica de turnos e probabilidades.</p>
+              <div class="tags"><span>Node.js</span><span>JavaScript</span></div>
+              <a href="https://github.com/odirborges" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="projeto" data-categoria="front game">
+            <div class="projeto-imagem" style="background:linear-gradient(135deg,#7c3aed,#312e81);">
+              <span>🎮</span>
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Jogo Detona Ralph</h3>
+              <p>Jogo interativo com estrutura em HTML/CSS, lógica em JavaScript,
+                animações via sprites e manipulação de DOM.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <a href="https://github.com/odirborges" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="projeto" data-categoria="front">
+            <div class="projeto-imagem" style="background:linear-gradient(135deg,#0ea5e9,#0c4a6e);">
+              <span>🧠</span>
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Site Institucional - Psicóloga Eliane da Fonte</h3>
+              <p>Site institucional responsivo desenvolvido para profissional da área
+                de psicologia. Foco em UX e publicado via GitHub Pages.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <a href="https://github.com/odirborges" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="projeto" data-categoria="front">
+            <div class="projeto-imagem" style="background:linear-gradient(135deg,#f59e0b,#7c2d12);">
+              <span>⛪</span>
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Site Institucional - Igreja Família 61 Jampa</h3>
+              <p>Projeto desenvolvido com prototipação prévia no Figma, seguindo
+                identidade visual e necessidades de comunicação da instituição.</p>
+              <div class="tags"><span>Figma</span><span>HTML5</span><span>CSS3</span></div>
+              <a href="https://github.com/odirborges" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="projeto" data-categoria="front">
+            <div class="projeto-imagem" style="background:linear-gradient(135deg,#10b981,#064e3b);">
+              <span>📄</span>
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Portfólio Pessoal (este site)</h3>
+              <p>Portfólio online desenvolvido com HTML5, CSS3 e JavaScript puros,
+                sem uso de frameworks. Inclui tema claro/escuro e formulário validado.</p>
+              <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+              <a href="https://github.com/odirborges" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 Odir Pereira Borges Neto. Todos os direitos reservados.</p>
+      <p class="rodape-pequeno">Feito com HTML5, CSS3 e JavaScript puro.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

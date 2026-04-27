@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+  Portfólio Online - Odir Pereira Borges Neto
+  Atividade Prática - Fundamentos da Programação Web - UNINTER
+  Página: Sobre Mim (página inicial)
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio online de Odir Pereira Borges Neto - Desenvolvedor Back-End" />
+  <title>Odir Borges | Sobre Mim</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação fixo (presente em todas as páginas) -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="index.html" class="logo">Odir<span>.dev</span></a>
+
+      <!-- Botão hamburguer para menu mobile (controlado por JavaScript) -->
+      <button id="btnMenu" class="btn-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="ativo">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <!-- Botão de alternância de tema claro/escuro -->
+        <button id="btnTema" class="btn-tema" aria-label="Alternar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção principal de apresentação (Hero) -->
+    <section class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <p class="saudacao">Olá, eu sou</p>
+          <h1>Odir Pereira <br/>Borges Neto</h1>
+          <h2>Estudante de Ciência da Computação</h2>
+          <p class="hero-descricao">
+            Desenvolvedor em formação com foco em Node.js, JavaScript e Python.
+            Mais de 20 anos de experiência em gestão e liderança, agora aplicados
+            ao mundo da tecnologia.
+          </p>
+          <div class="hero-botoes">
+            <a href="portfolio.html" class="btn btn-primario">Ver Projetos</a>
+            <a href="contato.html" class="btn btn-secundario">Fale Comigo</a>
+          </div>
+        </div>
+        <div class="hero-imagem">
+          <div class="avatar">OB</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section class="secao">
+      <div class="container">
+        <h2 class="titulo-secao">Sobre Mim</h2>
+        <div class="grid-2">
+          <div class="cartao">
+            <h3>👨‍💻 Quem sou eu</h3>
+            <p>
+              Sou Odir Pereira Borges Neto, de João Pessoa-PB. Tenho uma trajetória
+              de mais de duas décadas em gestão, liderança e tomada de decisão em
+              empresas dos setores de varejo, construção civil, distribuição e
+              administração pública.
+            </p>
+            <p>
+              Hoje, direciono toda essa bagagem para uma nova jornada: o desenvolvimento
+              de software, com foco em back-end usando Node.js, JavaScript e Python.
+            </p>
+          </div>
+
+          <div class="cartao">
+            <h3>🎯 Objetivo profissional</h3>
+            <p>
+              Atuar como desenvolvedor back-end, contribuindo com soluções escaláveis
+              e eficientes. Combino visão de negócio, disciplina de gestão e a paixão
+              recém-descoberta pela programação para entregar valor real.
+            </p>
+          </div>
+
+          <div class="cartao">
+            <h3>🎮 Hobbies e Interesses</h3>
+            <ul>
+              <li>Estudar novas tecnologias e linguagens</li>
+              <li>Jogos eletrônicos (especialmente clássicos)</li>
+              <li>Leitura sobre gestão e empreendedorismo</li>
+              <li>Acompanhar inovações em IA e desenvolvimento web</li>
+            </ul>
+          </div>
+
+          <div class="cartao">
+            <h3>📍 Informações rápidas</h3>
+            <ul class="info-lista">
+              <li><strong>Localização:</strong> João Pessoa - PB</li>
+              <li><strong>E-mail:</strong> neto.odir@gmail.com</li>
+              <li><strong>Telefone:</strong> (83) 99605-2766</li>
+              <li><strong>Disponibilidade:</strong> Estágio / Júnior</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé presente em todas as páginas -->
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 Odir Pereira Borges Neto. Todos os direitos reservados.</p>
+      <p class="rodape-pequeno">Feito com HTML5, CSS3 e JavaScript puro.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
